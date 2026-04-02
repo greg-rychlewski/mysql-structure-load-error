@@ -40,8 +40,9 @@ defmodule ImportError.MixProject do
   defp deps do
     [
       {:phoenix, "~> 1.8.1"},
-      {:phoenix_ecto, "~> 4.5"},
-      {:ecto_sql, "~> 3.13"},
+      {:phoenix_ecto, "~> 4.5", override: true},
+      {:ecto, "~> 3.13", override: true},
+      {:ecto_sql, github: "elixir-ecto/ecto_sql", branch: "master", override: true},
       {:myxql, ">= 0.0.0"},
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
