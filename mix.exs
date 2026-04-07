@@ -42,7 +42,7 @@ defmodule ImportError.MixProject do
       {:phoenix, "~> 1.8.1"},
       {:phoenix_ecto, "~> 4.5", override: true},
       {:ecto, "~> 3.13", override: true},
-      {:ecto_sql, github: "elixir-ecto/ecto_sql", branch: "master", override: true},
+      {:ecto_sql, github: "greg-rychlewski/ecto_sql", branch: "mysql_structure_load_fix", override: true},
       {:myxql, ">= 0.0.0"},
       {:telemetry_metrics, "~> 1.0"},
       {:telemetry_poller, "~> 1.0"},
